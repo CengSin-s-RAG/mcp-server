@@ -79,7 +79,10 @@ func InitLLMs(cfg *config.OpenAIConfig) {
 		panic("openai config is nil")
 	}
 	if cfg.ApiKey == "" {
-		cfg.ApiKey = os.Getenv("OPENROUTER_API_KEY")
+		cfg.ApiKey = os.Getenv("API_KEY")
+	}
+	if cfg.BaseURL == "" {
+		cfg.BaseURL = os.Getenv("BASE_URL")
 	}
 
 	conf := openai.DefaultConfig(cfg.ApiKey)

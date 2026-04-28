@@ -15,6 +15,7 @@
   - Qdrant (向量检索)
 - **存储**: MinIO
 - **AI/LLM**: OpenAI (通过 client 初始化)
+- **Temporal**: 工作流，本地启动脚本路径(~/GolandWorkSapce2025/money-transfer-project-template-go)
 
 ### 主要功能
 - 提供 Streamable HTTP Server 运行在 `:8085` 端口。
